@@ -16,6 +16,14 @@ Server enables you to send SMS messages with simple HTTP POST request:
 
 GSMGo uses [libGammu](http://wammu.eu/libgammu/) so it has support for many different phones. Check [Gammu Phone Database](http://wammu.eu/phones/) for details.
 
+Download
+--------
+
+Binaries are compiled with static build of libGammu, so gammu/libgammu is not required to be installed.
+
+ - [Linux 32bit](https://github.com/gen2brain/gsmgo/releases/download/1.0/gsmgo-1.0-32bit.tar.gz)
+ - [Linux 64bit](https://github.com/gen2brain/gsmgo/releases/download/1.0/gsmgo-1.0-64bit.tar.gz)
+
 Usage
 -----
 
@@ -41,14 +49,6 @@ You can also point it with -config option.
 
 You can try to detect your device with gammu-detect from gammu package and then just copy /etc/gammurc file to /etc/gsmgo.conf.
 
-
-Download
---------
-
-Binaries are compiled with static build of libGammu, so gammu/libgammu is not required to be installed.
-
- - [Linux 32bit](https://github.com/gen2brain/gsmgo/releases/download/1.0/gsmgo-1.0-32bit.tar.gz)
- - [Linux 64bit](https://github.com/gen2brain/gsmgo/releases/download/1.0/gsmgo-1.0-64bit.tar.gz)
 
 Compile
 -------
