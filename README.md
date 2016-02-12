@@ -58,5 +58,6 @@ Install libgammu library and devel package:
     apt-get install libgammu-dev libgammu
 
 Install server to $GOPATH/bin:
+
     go get github.com/gen2brain/gsmgo
     go install github.com/gen2brain/gsmgo/server/gsmgo
