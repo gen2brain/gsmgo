@@ -47,8 +47,8 @@ Download
 
 Binaries are compiled with static build of libGammu, so gammu/libgammu is not required to be installed.
 
- - [Linux 32bit](https://github.com/gen2brain/gsmgo/releases/download/1.0.0/gsmgo-1.0-32bit.tar.gz)
- - [Linux 64bit](https://github.com/gen2brain/gsmgo/releases/download/1.0.0/gsmgo-1.0-64bit.tar.gz)
+ - [Linux 32bit](https://github.com/gen2brain/gsmgo/releases/download/1.0/gsmgo-1.0-32bit.tar.gz)
+ - [Linux 64bit](https://github.com/gen2brain/gsmgo/releases/download/1.0/gsmgo-1.0-64bit.tar.gz)
 
 Compile
 -------
