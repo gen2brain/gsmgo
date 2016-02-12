@@ -60,7 +60,7 @@ func handleSMS(w http.ResponseWriter, r *http.Request) {
 		js, _ := json.MarshalIndent(map[string]string{"status": "ERROR", "message": err.Error()}, "", "    ")
 		w.Write(js)
 	} else {
-		js, _ := json.MarshalIndent(map[string]string{"status": "OK", "message": ""}, "", "    ")
+		js, _ := json.MarshalIndent(map[string]string{"status": "OK", "message": "success"}, "", "    ")
 		w.Write(js)
 	}
 }
