@@ -1,0 +1,10 @@
+[Unit]
+Description=GSMGo
+After=network.target
+
+[Service]
+User=daemon
+ExecStart=/usr/bin/gsmgo
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,4 @@
+[gammu]
+device = /dev/ttyACM0
+name = Ericsson Ericsson_F3507g_Mobile_Broadband_Minicard_Composite_Device
+connection = at
