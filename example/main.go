@@ -22,6 +22,11 @@ func main() {
 		os.Exit(1)
 	}
 
+	if len(*text) > 160 {
+		fmt.Println("Message exceeds 160 characters")
+		os.Exit(1)
+	}
+
 	g, err := gsm.NewGSM()
 	if err != nil {
 		fmt.Println(err)
