@@ -32,6 +32,8 @@ Usage
             Bind address (default ":38164")
       -config string
             Config file
+      -debug
+    	    Enable debugging
       -password string
             Password
       -username string
