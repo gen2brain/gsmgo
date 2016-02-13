@@ -22,7 +22,7 @@ var (
 )
 
 func handleSMS(w http.ResponseWriter, r *http.Request) {
-	w.Header().Set("Server", fmt.Sprintf("%s/%s", "GSMGo", "1.0"))
+	w.Header().Set("Server", fmt.Sprintf("%s/%s", "GSMGo", "1.1"))
 
 	if r.Method != "POST" {
 		http.Error(w, "405 Method Not Allowed", http.StatusMethodNotAllowed)
