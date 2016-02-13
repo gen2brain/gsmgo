@@ -12,6 +12,7 @@ import (
 
 func main() {
 	cfg := flag.String("config", "", "Config file")
+	debug := flag.Bool("debug", false, "Enable debugging")
 	text := flag.String("text", "", "Text Message")
 	number := flag.String("number", "", "Phone Number")
 	flag.Parse()
@@ -27,7 +28,9 @@ func main() {
 	}
 	defer g.Terminate()
 
-	//g.EnableDebug()
+	if *debug {
+		g.EnableDebug()
+	}
 
 	usr, _ := user.Current()
 	homedir := usr.HomeDir

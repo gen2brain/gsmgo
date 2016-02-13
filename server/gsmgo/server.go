@@ -94,8 +94,9 @@ func checkAuth(u string, p string) bool {
 }
 
 func main() {
-	b := flag.String("bind", ":38164", "Bind address")
 	cfg := flag.String("config", "", "Config file")
+	bind := flag.String("bind", ":38164", "Bind address")
+	debug := flag.Bool("debug", false, "Enable debugging")
 	username = flag.String("username", "", "Username")
 	password = flag.String("password", "", "Password")
 	flag.Parse()
@@ -108,7 +109,9 @@ func main() {
 	}
 	defer g.Terminate()
 
-	//g.EnableDebug()
+	if *debug {
+		g.EnableDebug()
+	}
 
 	usr, _ := user.Current()
 	homedir := usr.HomeDir
@@ -147,6 +150,6 @@ func main() {
 		os.Exit(1)
 	} else {
 		log.Printf("Phone is connected")
-		startHTTP(*b)
+		startHTTP(*bind)
 	}
 }
